@@ -1,67 +1,115 @@
 # 🌍 Multi-Agent Tourism System
 
-An AI-powered tourism system that uses multiple agents to provide travel information.
+An AI-powered multi-agent tourism system that helps users get travel-related information for any location.
 
-This system allows users to:
-- Check current weather
-- Discover popular tourist attractions
-- Plan a complete trip
-- View locations on the map
+The system can:
+- Show current weather
+- Suggest popular tourist attractions
+- Help plan a complete trip
+- Display the location on an interactive map
+
+---
+
+## 🌐 Live Demo (Deployed Application)
+
+👉 Click here to use the application live:  
+https://multi-agent-tourism-system-72mvdgjtjclcj9m4aaxcpl.streamlit.app/
+
+---
+
+## 🔗 GitHub Repository
+
+https://github.com/Soujanya315/Multi-Agent-Tourism-System
+
+---
 
 ## 🚀 Features
 
 ✅ Multi-agent architecture  
-✅ Weather information (Open-Meteo API)  
-✅ Tourist places (Overpass API)  
+✅ Live weather information (Open-Meteo API)  
+✅ Tourist places listing (Overpass API)  
 ✅ Location detection (Nominatim API)  
-✅ Clean and interactive GUI using CustomTkinter  
-✅ OpenStreetMap integration  
+✅ Clean & interactive UI (Streamlit / CustomTkinter)  
+✅ Map view using OpenStreetMap  
+✅ Real-time API-based results (NO hardcoding)  
+
+---
 
 ## 🧠 Agents Used
 
-1. **Geocoding Agent** – Converts place name to latitude and longitude  
-2. **Weather Agent** – Fetches live temperature and rain probability  
-3. **Places Agent** – Suggests top tourist attractions  
-4. **Parent Tourism Agent** – Controls and manages all child agents  
+1. **Geocoding Agent**  
+   Converts the entered place name into latitude and longitude using the Nominatim API.
 
-## 🛠 Technologies Used
+2. **Weather Agent**  
+   Retrieves the live temperature and rain probability using Open-Meteo API.
+
+3. **Places Agent**  
+   Finds nearby tourist attractions using the Overpass API and OpenStreetMap data.
+
+4. **Parent Tourism Agent**  
+   Orchestrates all child agents and returns a combined response.
+
+---
+
+## 🛠️ Technologies Used
 
 - Python
+- Streamlit
 - Requests
-- CustomTkinter
 - Nominatim API
 - Open-Meteo API
 - Overpass API
 - OpenStreetMap
 
-## ▶ How to Run the Project
+---
 
-1. Install dependencies:
+## 📦 Requirements
 
+streamlit
+requests
 
-2. Run the GUI:
+Install using:
 
-
-## 📷 GUI Features
-
-- Modern dark UI
-- Sidebar with actions (Weather, Places, Trip)
-- Large output display
-- Built-in map opening option
-
-## 📌 Example Inputs
-
-- I am going to Bangalore
-- I am going to Hampi, what is the temperature?
-- Plan a trip to Mangalore
-
-## ✅ Output
-
-The system will display:
-- Current temperature
-- Popular tourist attractions
-- Relevant travel information
+pip install -r requirements.txt
 
 ---
 
-**Developed as part of a Multi-Agent Systems assignment**
+## ▶ How To Run Locally
+
+1. Clone the repository:
+git clone https://github.com/Soujanya315/Multi-Agent-Tourism-System.git
+
+2. Go inside the folder:
+
+3. Install requirements:
+
+4. Run the Streamlit app:
+python -m streamlit run app.py
+
+---
+
+## 📥 Example Inputs
+
+- `I am going to Bangalore`
+- `I am going to Hampi, what is the temperature?`
+- `Plan a trip to Mangalore`
+- `Show places in Chikkamagaluru`
+
+---
+
+## ✅ Output
+
+The system displays:
+- Current temperature
+- Rain probability
+- Top tourist attractions
+- Travel suggestions
+- Map location
+
+---
+
+## 🎓 Project Info
+
+Developed as part of a **Multi-Agent Systems Assignment**  
+Role selected: **AI Developer**
+
